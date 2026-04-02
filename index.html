@@ -3,18 +3,49 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Product Listing</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>Product Display</title>
+    <style>
+        body { font-family: Arial, sans-serif; }
+        h1 { text-align: center; }
+        .product { border: 1px solid #ccc; margin: 10px; padding: 10px; border-radius: 5px; }
+        .product h2 { margin: 0; }
+        .product p { margin: 5px 0; }
+        .container { display: flex; flex-wrap: wrap; justify-content: center; }
+    </style>
 </head>
 <body>
-    <header>
-        <h1>Product Listing</h1>
-    </header>
-    <main>
-        <div class="product-list">
-            <!-- Products will be dynamically generated here -->
+    <h1>Product Catalog</h1>
+    <div class="container">
+        <div class="product">
+            <h2>LINHA LISA</h2>
+            <p>3MIL - $10.00</p>
+            <p>6MIL - $15.00</p>
+            <p>12MIL - $20.00</p>
         </div>
-    </main>
-    <script src="app.js"></script>
+        <div class="product">
+            <h2>LINHA MEIO TERMO</h2>
+            <p>3MIL - $12.00</p>
+            <p>6MIL - $18.00</p>
+            <p>12MIL - $25.00</p>
+        </div>
+        <div class="product">
+            <h2>LINHA ÁSPERA</h2>
+            <p>3MIL - $14.00</p>
+            <p>6MIL - $22.00</p>
+            <p>12MIL - $30.00</p>
+        </div>
+        <div class="product">
+            <h2>LINHA 10</h2>
+            <p>3MIL - $16.00</p>
+            <p>6MIL - $24.00</p>
+            <p>12MIL - $35.00</p>
+        </div>
+        <div class="product">
+            <h2>LINHA 4</h2>
+            <p>3MIL - $18.00</p>
+            <p>6MIL - $28.00</p>
+            <p>12MIL - $40.00</p>
+        </div>
+    </div>
 </body>
 </html>
